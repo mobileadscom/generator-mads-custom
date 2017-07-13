@@ -1,6 +1,6 @@
 {
   "name": "generator-mads-custom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "yeoman generator for mobileads.com custom ad",
   "homepage": "https://github.com/mobileadscom/generator-mads-custom",
   "author": {
