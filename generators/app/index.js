@@ -67,6 +67,14 @@ module.exports = class extends Generator {
         name: `MADS_Project_${this.props.name}`
       }
     );
+
+    this.fs.copyTpl(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md'),
+      {
+        name: `MADS_Project_${this.props.name}`
+      }
+    );
   }
 
   install() {
