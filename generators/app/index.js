@@ -31,13 +31,18 @@ module.exports = class extends Generator {
     this.destinationRoot(`${this.contextRoot}/MADS_Project_${this.props.name}`);
 
     this.fs.copy(
-      this.templatePath('**/*'),
+      this.templatePath('**/*!(ignore.txt)'),
       this.destinationPath(),
       {
         globOptions: {
           dot: true
         }
       }
+    );
+
+    this.fs.copy(
+      this.templatePath('ignore.txt'),
+      this.destinationPath('.gitignore')
     );
 
     const width = this.props.size.split('x')[0];
