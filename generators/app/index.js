@@ -31,7 +31,7 @@ module.exports = class extends Generator {
     this.destinationRoot(`${this.contextRoot}/MADS_Project_${this.props.name}`);
 
     this.fs.copy(
-      this.templatePath('**/*!(ignore.txt)'),
+      this.templatePath('**/!(ignore.txt)'),
       this.destinationPath(),
       {
         globOptions: {
