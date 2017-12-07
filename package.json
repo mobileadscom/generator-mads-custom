@@ -1,12 +1,12 @@
 {
   "name": "generator-mads-custom",
-  "version": "0.0.13",
+  "version": "0.0.13`",
   "description": "yeoman generator for mobileads.com custom ad",
   "homepage": "https://github.com/mobileadscom/generator-mads-custom",
   "author": {
     "name": "Jeff Paltera",
     "email": "jeff@mobileads.com",
-    "url": "mobileads.com"
+    "url": "https://mobileads.com"
   },
   "files": [
     "generators"
